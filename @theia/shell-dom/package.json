@@ -1,0 +1,32 @@
+{
+  "name": "@theia/shell-dom",
+  "version": "0.0.1",
+  "description": "Theia - Shell DOM",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TypeFox/Theia.git"
+  },
+  "main": "lib/index.js",
+  "types": "src/index.ts",
+  "files": [
+    "src/*.ts",
+    "lib/*.js",
+    "lib/*.d.ts",
+    "style/*.css",
+    "icons/*.svg"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@phosphor/widgets": "^0.1.4"
+  },
+  "scripts": {
+    "build": "../../node_modules/.bin/tsc",
+    "clean": "../../node_modules/.bin/rimraf lib"
+  },
+  "bugs": {
+    "url": "https://github.com/TypeFox/Theia/issues"
+  },
+  "homepage": "https://github.com/TypeFox/Theia"
+}

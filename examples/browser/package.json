@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "browser-example",
+  "dependencies": {
+    "@theia/fs-common": "^0.0.1",
+    "@theia/shell-dom": "^0.0.1",
+    "@theia/navigator-dom": "^0.0.1",
+    "@theia/platform-common": "^0.0.1",
+    "reflect-metadata": "^0.1.10"
+  },
+  "main": "lib/index.js",
+  "types": "src/index.ts",
+  "files": [
+    "lib/*.d.ts",
+    "lib/*.js",
+    "src/*.ts"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "clean": "rimraf lib",
+    "start:example": "webpack-dev-server --open"
+  },
+  "bin": {
+    "tsc": "../../node_modules/.bin/tsc",
+    "rimraf": "../../node_modules/.bin/rimraf",
+    "webpack": "../../node_modules/.bin/webpack",
+    "webpack-dev-server": "../../node_modules/.bin/webpack-dev-server"
+  }
+}
